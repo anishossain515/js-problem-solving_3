@@ -1,16 +1,23 @@
-//problem 1
-// function scopeTest() {
-//     if (true) {
-//       var varVariable = "I am var";
-//       let letVariable = "I am let";
-//       const constVariable = "I am const";
-//     }
-//     console.log(varVariable);
-//     console.log(letVariable);
-//     console.log(constVariable);
-// }
+// problem 1 
+//What will be the output of the following code and why?
+
+function scopeTest() {
+    if (true) {
+      var varVariable = "I am var";
+      let letVariable = "I am let";
+      const constVariable = "I am const";
+    }
+    console.log(varVariable);
+    // console.log(letVariable);
+    // console.log(constVariable);
+}
   
-//   scopeTest();
+  scopeTest();
+
+/* Answer : the output will i am var
+
+Because : [varVariable] it is declared using "var", which is local scope for that it [varVariable] is  accessible anywhere within the function [scopeTest()]. But let and const is  block-scoped variable for that they [letVariable,constVariable] aren't  accessible outside the [if] block*/ 
+
 
 
 /*problem 2  
